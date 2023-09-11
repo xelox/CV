@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+    body{
+        background-color: var(--bg);
+    }
+    :root{
+        --c1: rgb(86, 243, 201);
+        --bg: rgb(40, 44, 52);
+        --dim_text: rgb(168, 168, 168);
+        --text: rgb(235, 235, 235);
+        --bg2: rgb(50, 55, 65);
+        --link : rgb(120, 167, 255);
+        --b: rgb(255, 142, 229);
+    }
+    .page{
+        color: var(--text);
+        width: 816px;
+        /* height: 1054px; */
+        background-color: var(--bg);
+        display: flex;
+        align-items: stretch
+    }
+
+    .profilePic {
+        position: relative;
+        margin: 20px 0 20px 0;
+        width: 130px;
+        aspect-ratio: 1/1;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .details {
+        display: inline-block;
+        flex-grow: 1; /* Allow the text to take up remaining space */
+        width: max-content;
+    }
+
+    .leftPannel table{
+        border-collapse: collapse;
+        right: 0;
+        margin-left: auto;
+    }
+    .leftPannel td{
+      
+        padding: 2px;
+        text-align: right;
+    }
+    .brake {
+        white-space: normal;
+    }
+    a{
+        color: var(--link);
+        font-weight: 400;
+    }
+    .leftPannel{
+        background-color: var(--bg2);
+        width: max-content;
+        height: calc(calc(1169px * 2) - 20.5px);
+        padding: 8px 20px 8px 26px;
+        text-align: right;
+        position: relative;
+    }
+    .rightPannel{
+        display: block;
+        width: 100%;
+        padding: 16px;
+    }
+    .container{
+        margin-bottom: 36px;
+        position: relative;
+    }
+    .smallIcon{
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        margin: 0;
+        transform: translateY(3px);
+    }
+    .paragraph{
+        margin-bottom: 16px;
+    }
+    b{
+        color: var(--b);
+    }
+</style>
+<body>
+    <div class="page">
+        <div class="leftPannel">
+            <img class=profilePic src="images/profile.jpg" alt="profile">
+            <h2>Contact</h2>
+            <div class="container">
+                <div class="details" style="color: rgb(202, 202, 202)">
+                    <a href="tel:+44767711990">+44 767 711 990 <img class="smallIcon" src="images/phone.png" alt=""></a> <br>
+                    <a href="mailto:alex@gorodoro.dev">alex@gorodoro.dev <img class="smallIcon" src="images/mail.png" alt=""></a> <br>
+                    <a href="https://goo.gl/maps/rWvXigWGGV7suk7L9" target="_blank" rel="noopener noreferrer">Str. Gheorghe Doja nr.25a, Voluntari <img class="smallIcon" src="images/google-maps.webp" alt=""></a><br>
+                    <a href="https://about.gorodoro.dev">https://about.gorodoro.dev <img class="smallIcon" src="images/web.png" alt=""></a> <br>
+                    <a href="https://github.com/xelox" target="_blank" rel="noopener noreferrer">https://github.com/xelox <img class="smallIcon" src="images/git.png" alt=""></a>
+                </div>
+            </div>
+            <h2>Technologies</h2>
+            <div class="container">
+                JS/TS <img class=smallIcon src="images/typescript_logo.png" alt="typescript logo"> <br>
+                Svelte <img class=smallIcon src="images/svelte.png" alt=""> <br>
+                Electron <img class=smallIcon src="images/electron.png" alt=""> <br>
+                MySQL/sqlite3 <img class=smallIcon src="images/database-icon.png" alt=""> <br>
+                Git <img class=smallIcon src="images/git.png" alt=""> <br>
+                Node JS <img class=smallIcon src="images/node-js.png" alt=""> <br>   
+                Linux <img class=smallIcon src="images/linux.png" alt=""> <br>  
+                PHP/Laravel <img class=smallIcon src="images/php-elephant.png" alt=""> <br>
+                C++ <img class=smallIcon src="images/c++.png" alt=""> <br>
+               
+            </div>
+            <h2>Skills</h2>
+            <div class="container">
+                Using/Making APIs <img class="smallIcon" src="images/api.png" alt=""/><br>
+                Web Scraping <img class="smallIcon" src="images/icon-scraping-blue.png" alt=""/><br>
+                Database Management <img class="smallIcon" src="images/database-icon.png" alt=""/><br>
+                UI/UX <img class="smallIcon" src="images/UI-UX-logo.webp" alt=""/> <br>
+                Security <img class="smallIcon" src="images/cyber-security.png" alt=""/> <br>
+                Optimizations <img class="smallIcon" src="images/timer.png" alt=""/><br>
+                Nginx Server Configuration <img class="smallIcon" src="images/nginx.png" alt=""/><br>
+                Linux Sys Administation <img class="smallIcon" src="images/linux.png" alt=""/><br>  
+            </div>
+
+            <h2>Languages</h2>
+            <div class="container" style="margin-bottom: 200px;">
+                <table>
+                    <tr>
+                        <td style="opacity: 0.8; padding-right: 16px;">Fluent</td>
+                        <td>English</td>
+                        <td>🇬🇧</td>
+                    </tr>
+                    <tr>
+                        <td style="opacity: 0.8; padding-right: 16px;">Native</td>
+                        <td>Italian</td>
+                        <td>🇮🇹</td>
+                    </tr>
+                    <tr>
+                        <td style="opacity: 0.8; padding-right: 16px;">Native</td>
+                        <td>Romanian</td>
+                        <td>🇷🇴</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 style="margin-top: 20px;">Soft skills</h2>
+            <div class="container">
+                <ul style="list-style-position: inside; direction: rtl;">
+                    <li>Effective Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Mathematical approach</li>
+                    <li>Self-Confidence</li>
+                    <li>Handling Pressure</li>
+                    <li>Leadership</li>
+                    <li>Executing Delicate Tasks</li>
+                    <li>Can-Do attitude</li>
+                    <li>Critical Thinking</li>
+                    <li>Conflict Resolution</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="rightPannel">
+            <h1 style="text-align: center; padding-top: 16px; margin:0;">Alexandru Gheorghe</h1>
+            <h2 style="text-align: center; margin:0; color: var(--dim_text); margin-bottom: 32px;">Full Stack Developer</h2>
+            <h2 style="margin-bottom: 20px;">Work Experience</h3>
+            <h3>Removals Market Ltd</h3>
+            1st Nov 2021 - Present - UK <br>
+            <span style="color: var(--dim_text)">
+            Full Stack Developer</span> <br><br>
+            <ul style="margin-left: 16px;">
+                <li>
+                    <p class="paragraph">
+                        Developed a single page application "<b>The Dialler</b>" using <b>Svelte</b> and <b>NodeJS</b> as backend. This is for internal usage. It communicates with the database using a custom API that I wrote in 
+                        <b>Laravel</b>. <br> <br>The company used Laravel, but I pushed for the use of NodeJS as I believe that it is a better fit. 
+                        <br><br>This application allows us to make and receive call from clients, and to call automatically. It uses <b>Twilio API</b>, and 
+                        a custom algorithm to determine which clients to call, when, and using what phone number. <br>
+                        <br>We needed this application due to low answer rate. <br>
+                        Once in use, it has increased the effectiveness of our sales stage-1 team by a <b>x7</b> factor,
+                        it didn't affect stage-2 but it provided a <b>20%</b> improvement to stage-3.
+                        <br><br>
+                        This project has been my sole responsibility for over 2 years. <br>
+                        With time I added to it a lot of other features and QOL that you would expect from a "Contact Center System". <br>
+                    </p>
+                </li>
+                <li>
+                    <p class="paragraph">
+                        For "<b>The Dialler</b>", I made multiple data analysis and debug tools. I used ChartJS for making charts, and I wrote queries and algorithms to analyse our collected data.
+                        <br><br>Eventually I had to build a custom chart using native HTML Canvas, We needed to visualize the automated calls made in real time. 
+                        So I build a tool that receives events via WebSockets, and it updates chart data.<br>
+                        <!-- <img src="images/dialler-live.png" alt="" style="width: 100%; border-radius: 4px;"> -->
+                    </p>
+                </li>
+                <li>
+                    <p class="paragraph">
+                        Down the line I also added an <b>SMS Application</b> to the Dialler. This application allows us to send, receive, view, get notified of, SMS messages. <br>
+                        <!-- <img src="images/SMSTool.png" alt="" style="width: 100%; border-radius: 4px;"> -->
+                    </p>
+                </li>
+                <li> <p class="paragraph">
+                    Worked in <b>PHP/Laravel</b> using <b>Sendgrid API</b> to automate emails and generate PDFs at many stages of the selling process.
+                </p></li>
+                <li><p class="paragraph">
+                    Wrote a JS script that injects testimonial reviews into the website here. Previously the reviews were loading from justreview.co. The load time of the script changed from <b> >10s</b> to <b>&lt;1s</b>. The new version is a clone of the old one, (as requested by Management).
+                </p> </li>
+                <li>
+                    <p class="paragraph">
+                        Developed a page that allows clients to give us a review. This tool does the following: <br>
+                        <span style="color: var(--dim_text);">
+                            - Attributing the review to the right people. <br>
+                            - Keeping the last review only. <br>
+                            - Security (preventing abuse by our workers). <br>
+                        </span> <br>
+                        I also build a tool with charts and filters to let Management analyse the reviews data. <br>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
